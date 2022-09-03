@@ -1,0 +1,145 @@
+.container-list-data{
+  margin: 50px;
+  .title-page{
+    text-align: center;
+  }
+
+  .table-list-data{
+    text-align: -webkit-center;
+    table{
+      thead{
+        border: 1px solid black;
+        tr{
+          th{
+            padding: 5px 10px 5px 10px;
+          }
+        }
+      }
+      tbody{
+        border: 1px solid black;
+        td{
+          border-right: 1px solid black;
+          padding: 5px 10px 5px 10px;
+        }
+      }
+    }
+  }
+
+  .pagination-list{
+    margin: 0px 17px;    
+    .pagination-desc{
+      flex-grow: 0;
+      /* margin: 0 679px 5px 0; */
+      font-family: Roboto;
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal;
+      text-align: left;
+      color: #8295b0;
+      padding-top: 20px;
+      margin-bottom: 0;
+    }
+    .pagination{
+      justify-content: flex-end;
+      margin-bottom: 0;
+      .previous-btn{
+        flex-grow: 0;
+        font-family: SFProDisplay;
+        font-size: 12px;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #000000;
+        padding-top: 20px;
+        cursor: pointer;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+        outline: none;
+      }
+      .page-item-active{
+        border-bottom: 3px solid blue;
+        .page-link{
+          background: none;
+          border: none;
+          padding-top: 20px !important;
+          padding-bottom: 0 !important;
+          font-weight: 800;
+          font-family: SFProDisplay;
+          font-size: 12px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000000;
+          color: blue;
+        }
+      }
+      .page-item{
+        cursor: pointer;
+        .page-link{
+          color: black;
+          background: none;
+          border: none;
+          padding-top: 20px !important;
+          padding-bottom: 0 !important;
+          font-family: SFProDisplay;
+          font-size: 12px;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: normal;
+          text-align: center;
+          color: #000000;
+        }
+      }
+    }
+  }
+
+  .modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    position: absolute;
+    top: 150px;
+    left: 189px;
+    z-index: 1000;
+    .modal-header {
+      padding: 2px 16px;
+      background-color: gold;
+      color: white;      
+      color: black;
+      font-size: 20px;
+      font-weight: 700;
+      cursor: pointer;
+
+    }
+    .modal-body {
+      padding: 2px 16px;
+    }
+    .modal-footer {
+      padding: 2px 16px;
+      background-color: gold;
+      color: white;
+    }
+  }
+
+/* Add Animation */
+@keyframes animatetop {
+  from {top: -300px; opacity: 0}
+  to {top: 0; opacity: 1}
+}
+}
